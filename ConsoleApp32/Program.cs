@@ -14,7 +14,7 @@ namespace ConsoleApp32
                 }
             }
 
-            return -1;
+            throw new ArgumentException($"There is no number {value} in array {array}");
         }
 
         static int[] GetRandomArray(uint lenght, int minValue, int maxValue)
